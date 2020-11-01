@@ -1,15 +1,13 @@
 import Vue from 'vue'
+import vuetify from '@/plugins/vuetify'
 import App from './App.vue'
-import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
-import './assets/styles/custom.scss'
 
-// Install BootstrapVue
-Vue.use(BootstrapVue)
-// Optionally install the BootstrapVue icon components plugin
-Vue.use(IconsPlugin)
+// Use vuetify
+Vue.use(vuetify)
 
 Vue.config.productionTip = false
 
 new Vue({
   render: h => h(App),
+  vuetify
 }).$mount('#app')
