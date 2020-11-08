@@ -27,18 +27,22 @@
         </v-menu>
       </v-app-bar>
       <v-main>
-        <div class="text-center pa-10">👋 {{ msg }} 👋</div>
-        <!-- Votre Code ICI -->
+        <Todo msg="Salut les mecs"/>
       </v-main>
     </v-app>
   </div>
 </template>
 
 <script>
+import Todo from "@/components/Todo";
+
 export default {
   name: 'Topbar',
   props: {
     msg: String
+  },
+  components: {
+    Todo
   },
   data() {
     return {

@@ -1,11 +1,12 @@
 <template>
   <div id="app">
-    <Topbar msg="Salut les gens !"/>
+    <Topbar/>
   </div>
 </template>
 
 <script>
 import Topbar from './components/Topbar.vue'
+import Todo from "@/components/Todo";
 
 export default {
   name: 'App',
