@@ -26,7 +26,7 @@
           </v-list>
         </v-menu>
       </v-app-bar>
-      <v-main>
+      <v-main class="todos">
         <Todo msg="Salut les mecs"/>
       </v-main>
     </v-app>
@@ -52,4 +52,8 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.todos {
+  height: 100vh;
+}
+</style>

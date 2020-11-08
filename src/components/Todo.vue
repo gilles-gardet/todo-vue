@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-card elevation="2">
-      Test
+      {{ msg }}
     </v-card>
   </div>
 </template>
