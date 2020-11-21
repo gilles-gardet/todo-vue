@@ -6,7 +6,6 @@
 
 <script>
 import Topbar from './components/Topbar.vue'
-import Todo from "@/components/Todo";
 
 export default {
   name: 'App',
