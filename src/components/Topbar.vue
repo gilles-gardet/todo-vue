@@ -52,7 +52,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .todos {
   height: 100vh;
 }
