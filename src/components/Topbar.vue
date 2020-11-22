@@ -27,7 +27,7 @@
         </v-menu>
       </v-app-bar>
       <v-main class="todos">
-        <Todo msg="Salut les mecs"/>
+        <Todo msg="Acheter du pain"/>
       </v-main>
     </v-app>
   </div>
