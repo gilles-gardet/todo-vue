@@ -1,28 +1,25 @@
 <template>
   <div id="todos">
-    <v-card elevation="2" class="todo" :class="{'card-done': done}">
-      <v-checkbox :value="done" input-value="carId" v-model="done"/>
-      <span :class="{'done': done}">{{ msg }}</span>
+    <v-card elevation="2" class="todo" :class="{'card-done': todoState}">
+      <v-checkbox input-value="carId" v-model="todoState"/>
+      <span :class="{'done': todoState}">{{ msg }}</span>
     </v-card>
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
-  name: 'Todo',
   done: true,
+  msg: '',
   props: {
-    msg: String
+    msg: String,
+    done: Boolean
   },
   data() {
     return {
-      name: '',
-      done: false
+      todoState: this.done,
     };
   },
-  methods: {
-
-  }
 }
 </script>
 
@@ -48,5 +45,5 @@ export default {
     }
   }
 }
-
 </style>
+

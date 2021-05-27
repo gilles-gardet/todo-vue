@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import Topbar from './components/Topbar.vue'
 
 export default {
